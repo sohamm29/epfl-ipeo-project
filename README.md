@@ -14,6 +14,15 @@ One or two sentences describing what this project does and who it is for.
 
 ---
 
+## Setup and Execution
+
+
+See the [Contributing Guide](CONTRIBUTING.md) for instructions on cloning the repository, setting up the environment with `uv`, and following the development workflow. Once dependencies are installed, you can run the main script using `uv`:
+
+```bash
+uv run src/main.py
+```
+
 ## Documentation
 
 Comprehensive documentation is available in the `docs/` directory:

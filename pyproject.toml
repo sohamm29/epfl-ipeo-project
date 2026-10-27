@@ -1,7 +1,7 @@
 [project]
-name = "glintt-next-template"
+name = "epfl-ipeo-project"
 version = "0.2.1"
-description = "Add your description here"
+description = "Course Project for Image Processing for Earth Observation"
 readme = "README.md"
 requires-python = ">=3.12"
 # Runtime dependencies for your application go here.
@@ -24,11 +24,6 @@ target-version = "py312"
 
 [tool.ruff.lint]
 select = ["E", "F", "I", "UP", "B"]  # pycodestyle, pyflakes, isort, pyupgrade, bugbear
-
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-addopts = "-ra"
-pythonpath = ["."]
 
 [tool.coverage.run]
 source = ["src"]
