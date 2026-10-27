@@ -28,3 +28,10 @@ jobs:
         run: uv run pre-commit run --all-files
         env:
           SKIP: no-commit-to-branch # local check to ensure no commit direct to main
+
+      - name: Notify on failure
+        if: failure()
+        run: |
+          echo "::error::CI failed! Run './scripts/ci.sh' (Linux/macOS) or '.\scripts\ci.ps1' (Windows) locally to reproduce and fix."
+          echo "### :x: CI Failed" >> $GITHUB_STEP_SUMMARY
+          echo "Run \`./scripts/ci.sh\` (Linux/macOS) or \`.\scripts\ci.ps1\` (Windows) locally to reproduce and fix the issues." >> $GITHUB_STEP_SUMMARY

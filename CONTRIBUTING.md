@@ -39,9 +39,17 @@ Create a new branch linked to the issue and based on the **`dev`** branch:
 
 Implement your changes and add/update tests as needed. Before pushing, run the local CI script to ensure everything passes:
 
-```bash
-./scripts/ci.sh
-```
+- **Linux / macOS:**
+
+  ```bash
+  ./scripts/ci.sh
+  ```
+
+- **Windows (PowerShell):**
+
+  ```powershell
+  .\scripts\ci.ps1
+  ```
 
 This script runs:
 
@@ -49,7 +57,7 @@ This script runs:
 - `pre-commit` hooks across all files
 - `ruff check` and `ruff format --check` (linting and formatting)
 
-Fix any reported issues until `./scripts/ci.sh` completes without errors.
+Fix any reported issues until `./scripts/ci.sh` (or `.\scripts\ci.ps1` on Windows) completes without errors.
 
 ### Step 4: Open a Pull Request to `dev`
 
