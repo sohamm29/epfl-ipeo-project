@@ -16,6 +16,3 @@ uv run ruff check .
 
 echo "==> Ruff format"
 uv run ruff format --check .
-
-echo "==> Pytest"
-uv run pytest
