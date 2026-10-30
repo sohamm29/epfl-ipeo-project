@@ -64,7 +64,7 @@ Fix any reported issues until `./scripts/ci.sh` (or `.\scripts\ci.ps1` on Window
 1. Push your branch to GitHub:
 
    ```bash
-   git push -u origin <your-branch-name>
+   git push -u origin <your-branch-name> ## if not set upstream otherwise only 'git push' needed
    ```
 
 2. Open a Pull Request on GitHub with:
