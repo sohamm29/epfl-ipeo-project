@@ -14,14 +14,41 @@ bla bla bla
 
 ---
 
-## Setup and Execution
+## Project Structure
 
+```
+epfl-ipeo-project/
+├── .github/                            # CI/CD Workflows and Issue/PR Templates
+├── assets/                             # Image files, pictures to put in notebooks or README
+├── docs/                               # Documentation files
+├── notebooks/                          # Sandbox testing in notebook form, to try out different techniques or explore datasets
+├── scripts/                            # Utility automation scripts
+├── src/                                # Main project code
+├── .dockerignore                       # Files to ignore when building docker image
+├── .editorconfig                       # VSCode specific configurations to emulate same dev configuration
+├── .gitattributes                      # General git configuration (remap all CRLF to LF, for uniform line endings)
+├── .gitconfig                          # Useful git alias for use in the project
+├── .gitignore                          # Files to ignore when commiting to remote (e.g. venv or cache)
+├── .pre-commit-config.yaml             # Pre-commit hooks config
+├── .python-version                     # specifies project python version
+├── pyproject.toml                      # Project dependencies & config
+├── CONTRIBUTING.md                     # Explains how to contribute to this project, issue creation, branch policy, ci checks etc
+├── Dockerfile                          # Creation of containerized docker image
+├── README.md                           # This file
+└──  uv.lock                            # UV package manager lock file
+```
+
+---
+
+## Setup and Execution
 
 See the [Contributing Guide](CONTRIBUTING.md) for instructions on cloning the repository, setting up the environment with `uv`, and following the development workflow. Once dependencies are installed, you can run the main script using `uv`:
 
 ```bash
 uv run src/main.py
 ```
+
+---
 
 ## Documentation
 
@@ -30,3 +57,11 @@ Comprehensive documentation is available in the `docs/` directory:
 | Document | Description |
 | --- | --- |
 | [Test](docs/test.md) | Template doc placeholder. |
+
+---
+
+## Contributors
+
+- [Soham Malhotra](https://github.com/sohamm29)
+- [Justin Lungu](https://github.com/JustinLungu)
+- [Edouard Egger](https://github.com/sohamm29)
