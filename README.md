@@ -1,6 +1,6 @@
-# Project Name
+# Image Processing and Earth Observation Semester Project: cool ass name
 
-One or two sentences describing what this project does and who it is for.
+bla bla bla
 
 <!-- Badge URLs point at this repository; update the owner/repo path after generating a new repository from this template -->
 [![CI](https://github.com/sohamm29/epfl-ipeo-project/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/sohamm29/epfl-ipeo-project/actions/workflows/ci.yml)
