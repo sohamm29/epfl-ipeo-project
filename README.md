@@ -57,6 +57,9 @@ Comprehensive documentation is available in the `docs/` directory:
 | Document | Description |
 | --- | --- |
 | [Project Options](docs/project_options_2026.pdf) | Project Options and Grading Guideline for 2026. |
+| [Report](docs/report.odt) | Final report for the Project. |
+| [Report (PDF)](docs/report.pdf) | Final report for the Project (PDF). |
+
 
 ---
 
@@ -64,4 +67,4 @@ Comprehensive documentation is available in the `docs/` directory:
 
 - [Soham Malhotra](https://github.com/sohamm29)
 - [Justin Lungu](https://github.com/JustinLungu)
-- [Edouard Egger](https://github.com/sohamm29)
+- [Edouard Egger](https://github.com/eegger4422)
