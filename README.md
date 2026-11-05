@@ -56,7 +56,7 @@ Comprehensive documentation is available in the `docs/` directory:
 
 | Document | Description |
 | --- | --- |
-| [Test](docs/test.md) | Template doc placeholder. |
+| [Project Options](docs/project_options_2026.pdf) | Project Options and Grading Guideline for 2026. |
 
 ---
 
