@@ -10,11 +10,3 @@ if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 Write-Host "==> Pre-commit hooks"
 uv run pre-commit run --all-files
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-
-Write-Host "==> Ruff lint"
-uv run ruff check .
-if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-
-Write-Host "==> Ruff format"
-uv run ruff format --check .
-if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
