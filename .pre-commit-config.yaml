@@ -12,6 +12,7 @@ repos:
         exclude: ^charts/.*$
       - id: check-json
       - id: check-added-large-files
+        args: ["--enforce-all", "--maxkb=20480"]  #20MB limit
       - id: check-illegal-windows-names
       - id: check-shebang-scripts-are-executable
       - id: check-merge-conflict
