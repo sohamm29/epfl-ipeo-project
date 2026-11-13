@@ -16,12 +16,12 @@ bla bla bla
 
 ## Project Structure
 
-```
+```text
 epfl-ipeo-project/
 ├── .github/                            # CI/CD Workflows and Issue/PR Templates
 ├── assets/                             # Image files, pictures to put in notebooks or README
 ├── docs/                               # Documentation files
-├── notebooks/                          # Sandbox testing in notebook form, to try out different techniques or explore datasets
+├── sandbox/                            # Sandbox testing in notebook form, to try out different techniques or explore datasets
 ├── scripts/                            # Utility automation scripts
 ├── src/                                # Main project code
 ├── .dockerignore                       # Files to ignore when building docker image
@@ -42,11 +42,45 @@ epfl-ipeo-project/
 
 ## Setup and Execution
 
-See the [Contributing Guide](CONTRIBUTING.md) for instructions on cloning the repository, setting up the environment with `uv`, and following the development workflow. Once dependencies are installed, you can run the main script using `uv`:
+```bash
+git clone git@github.com:sohamm29/epfl-ipeo-project.git
+cd epfl-ipeo-project
+git checkout dev
+```
+
+Install dependencies using [uv](https://docs.astral.sh/uv/):
+
+```bash
+uv sync --all-extras --dev
+```
+
 
 ```bash
 uv run src/main.py
 ```
+
+### CI Checks
+
+Before pushing, run the local CI script to ensure everything passes:
+
+- **Linux / macOS:**
+
+  ```bash
+  ./scripts/ci.sh
+  ```
+
+- **Windows (PowerShell):**
+
+  ```powershell
+  .\scripts\ci.ps1
+  ```
+
+This script runs:
+
+- `uv sync --all-extras --dev` (dependency check)
+- `pre-commit` hooks across all files (checks file shebangs, checks linting and so on)
+
+Fix any reported issues until `./scripts/ci.sh` (or `.\scripts\ci.ps1` on Windows) completes without errors.
 
 ---
 
@@ -60,11 +94,10 @@ Comprehensive documentation is available in the `docs/` directory:
 | [Report](docs/report.odt) | Final report for the Project. |
 | [Report (PDF)](docs/report.pdf) | Final report for the Project (PDF). |
 
-
 ---
 
 ## Contributors
 
 - [Soham Malhotra](https://github.com/sohamm29)
 - [Justin Lungu](https://github.com/JustinLungu)
-- [Edouard Egger](https://github.com/eegger4422)
+- [Edouard Egger](https://github.com/sohamm29)
